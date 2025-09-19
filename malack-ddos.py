@@ -77,8 +77,9 @@ def print_red_centered_art():
 \033[92m   ║══╗╝ ║     ╔═══╗ ║    ║══╝╗    ╔═══╗ ║═══╗ ║  ║  ║  ══╔═ \033[0m   
 \033[92m   ╚══╝  ════╝ ╝   ╚ ╚══╝ ╝   ╚    ╝   ╚ ╝   ╚ ╝     ╚    ╚  \033[0m
 
-\033[33m══════════════════════ \033[37mJ A N C O K Z O S A N\033[33m ═════════════════════'''
-red_art = f"{Fore.GREEN}{art}{Style.RESET_ALL}"  # Set the text color to red
+\033[33m══════════════════════ \033[37mJ A N C O K Z O S A N\033[33m ═════════════════════
+'''
+    red_art = f"{Fore.GREEN}{art}{Style.RESET_ALL}"  # Set the text color to red
     print(red_art.center(80))  # Adjust the width (80 characters) to match your terminal size
     #red_art2 = f"{Fore.RED}{art2}{Style.RESET_ALL}"
     red_art2 = f"{Fore.YELLOW}{Style.RESET_ALL}"
