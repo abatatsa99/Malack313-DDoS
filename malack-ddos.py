@@ -7,6 +7,7 @@ import time
 from colorama import Fore, Style
 def ddos():
     os.system("clear")
+    print(f"{Fore.LIGHTBLUE_EX}
     print("press CTRL + C and press ENTER to exit !!!")
     while True:
         try:
@@ -63,7 +64,7 @@ def ddos():
 def print_red_centered_art():
     os.system("clear")
     print("""
-└->
+└>
 ╔═ ║  ═╗
 ╚════╝
     
