@@ -9,16 +9,16 @@ def ddos():
     print("press CTRL + C and press ENTER to exit !!!")
     while True:
         try:
-            print(f"{Fore.LIGTBLUE_EX}┌[KunFayz•••")
-            threads = int(input("{Fore.LIGTBLUE_EX}└> ENTER NUMBER OF THREADS : "))
+            print(f"{Fore.LIGHTBLUE_EX}┌[KunFayz•••")
+            threads = int(input("{Fore.LIGHTBLUE_EX}└> ENTER NUMBER OF THREADS : "))
         except ValueError:
             print("please enter a integer value")
             continue;
         else:
             break;
     attack_id = 2
-    print(f"{Fore.LIGTGREEN_EX}┌[KunFayz•••")
-    trget = str(input(Fore.LIGTGREEN_EX + Style.BRIGHT + "└> ENTER IP OF THE HOST :  "))
+    print(f"{Fore.LIGHTGREEN_EX}┌[KunFayz•••")
+    trget = str(input(Fore.LIGHTGREEN_EX + Style.BRIGHT + "└> ENTER IP OF THE HOST :  "))
     fake = '192.178.1.38'
     #port = 80( default http port is 80)
     while True:
