@@ -22,7 +22,7 @@ def ddos():
             print("\033[33m╚════════════════════════════════════════════════════╝")
             print("")
             print("\033[33m╔═══════════════════════════════════════════════════════╗\033[0m")    
-            print("\033[33m║ \033[103m          \033[32mBLACK ARMY ATTACKERS COMMUNITY\033[103m              \033[33m║\033[0m")
+            print("\033[33m║ \033[103m          \033[32mBLACK ARMY ATTACKERS COMMUNITY\033[103m            \033[0m  \033[33m║")
             print("\033[33m╚═══════════════════════════════════════════════════════╝\033[0m")
             threads = int(input("ENTER NUMBER OF THREADS : "))
         except ValueError:
