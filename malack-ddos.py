@@ -85,12 +85,12 @@ def menu():
    # print("\r{Fore.LIGHTYELLOW_EX}[Info] Press CTRL + C and press enter to exit!!")
     print(f"\r{Fore.LIGHTYELLOW_EX}•••> [Info] Press CTRL + C and press enter to exit!!")
     print(f"\r{Fore.RED}——————————————————————————————————————————————————————————————————")
-    print(f"\r{Fore.WHITE}┏⬣ Please type Y to continue...")
+    print(f"\r{Fore.WHITE}┏⬣{Fore.YELLOW} Please type Y to continue...")
     print(Fore.WHITE + Style.BRIGHT + "┗> 1. DDos a website.  [Y]")
     print(Fore.WHITE + Style.BRIGHT + "┗> 2. exit.            [n]")
     print("Enter your options .. [e.g Y,n]") 
     global usr
-    usr = input(Fore.YELLOW + Style.BRIGHT + "••> " )
+    usr = input(Fore.YELLOW + Style.BRIGHT + "┗>: " )
     if usr == "Y":
         ddos()
     elif usr == "n":
