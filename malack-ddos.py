@@ -9,6 +9,7 @@ def ddos():
     os.system("clear")
     print("press CTRL + C and press ENTER to exit !!")
     while True:
+        print_red_centered_art()
         os.system("clear")
         print("""
       \033[32m╔╗ 
