@@ -67,14 +67,15 @@ def ddos():
 def print_red_centered_art():
     os.system("clear")
     print("""
-└>
+
 ╔═ ║  ═╗
 ╚════╝
     
 █
 """)
     print((80))
-    print(Fore.YELLOW + Style.BRIGHT + "[KING's dedication and struggle for PALESTINE]")
+    print(Fore.LIGHTGREEN
+    print(Fore.LIGHTGREEN + Style.BRIGHT + "└>• Note: Do not use to attack government websites.")
 if __name__ == "__main__":
     print_red_centered_art()
 def menu():
