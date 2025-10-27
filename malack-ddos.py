@@ -23,7 +23,8 @@ def ddos():
             print("\033[33m╔═════════════════════════════════════════════════════════════════╗\033[0m")    
             print("\033[33m║  \033[103m                \033[32mBLACK ARMY ATTACKERS COMMUNITY\033[103m               \033[0m  \033[33m║")
             print("\033[33m╚═════════════════════════════════════════════════════════════════╝\033[0m")
-            threads = int(input("ENTER NUMBER OF THREADS : "))
+            print("\033[97m┏━━━KunFayz━━━⬣")
+            threads = int(input("\033[97m┗━> Enter number of threads: \033[33m"))
         except ValueError:
             print("please enter a integer value")
             continue;
