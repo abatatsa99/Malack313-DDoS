@@ -83,9 +83,9 @@ if __name__ == "__main__":
     print_red_centered_art()
 def menu():
    # print(Style.BRIGHT + Fore.YELLOW + "[INFO!]" Fore.WHITE + "Press CTRL + C and press enter to exit!!")
-    print(Style.BRIGHT + Fore.BLUE + "[INFO!]" + Fore.BLUE + "Press CTRL + C and press enter to exit!!")
-    print(Fore.WHITE + Style.BRIGHT + "——————————————————————————————————————————————————————————————————")
-    print(Fore.YELLOW + Style.BRIGHT + "Silahkan ketik 1 untuk melanjutkan...")
+    print(f"\r{Fore.LIGHTYELLOW_EX}•••> [Info] Press CTRL + C and press enter to exit!!")
+    print(f"\r{Fore.WHITE}——————————————————————————————————————————————————————————————————")
+    print(f"\r{Fore.WHITE}Silahkan ketik 1 untuk melanjutkan...")
     print(Fore.BLUE + Style.BRIGHT + "1. DDos a website.  [1]")
     print(Fore.WHITE + Style.BRIGHT + "2. exit.            [2]")
     print("Enter your options .. [e.g 1,2]") 
