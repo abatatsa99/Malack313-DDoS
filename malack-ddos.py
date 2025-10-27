@@ -9,10 +9,10 @@ def ddos():
     os.system("clear")
     print("press CTRL + C and press ENTER to exit !!")
     while True:
-        
+
+        try:
         print("\033[32m╔╗")
         print("\033[32m║║")
-        try:
             threads = int(input("ENTER NUMBER OF THREADS : "))
         except ValueError:
             print("please enter a integer value")
