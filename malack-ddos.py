@@ -54,7 +54,8 @@ def ddos():
                 print(f"{Fore.LIGHTMAGENTA_EX}[]  {Fore.LIGHTCYAN_EX}M A L A C K \033[103mSent massage\033[0m  \033[41m"+ str(attack_num)+"\033[0m \033[94m Starting\033[0m")
                 print(f"{Fore.LIGHTRED_EX}[]  {Fore.LIGHTYELLOW_EX}M A L A C K \033[7mSent massage\033[0m  \033[103m"+ str(attack_num)+"\033[0m \033[8m running.\033[0m")
             except socket.error:
-                print(f"{Fore.BLUE}Connection failed, {Fore.YELLOW}Host mat be down \033[96m please check host\033[0")
+                print(f"{Fore.BLUE}[]  {Fore.YELLOW}Connection failed \033[7m please check host\033[0")
+                print(f"{Fore.YELLOW}[]  {Fore.BLUE}Connection failed \033[101m please check host\033[0")
                 break
                 s.close()
 
