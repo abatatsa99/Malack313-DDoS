@@ -88,7 +88,7 @@ def menu():
     print(f"\r{Fore.WHITE}┏⬣{Fore.YELLOW} Please type Y to continue...")
     print(Fore.WHITE + Style.BRIGHT + "┗> 1. DDos a website.  [Y]")
     print(Fore.WHITE + Style.BRIGHT + "┗> 2. exit.            [n]")
-    print("Enter your options .. [e.g Y,n]") 
+    print(f"\r{Fore.YELLOW}┏⬣ Enter your options  [e.g Y,n]") 
     global usr
     usr = input(Fore.YELLOW + Style.BRIGHT + "┗>: " )
     if usr == "Y":
