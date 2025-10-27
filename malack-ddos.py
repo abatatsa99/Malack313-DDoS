@@ -70,14 +70,14 @@ def print_red_centered_art():
 
 ╔═ ║  ═╗
 ╚════╝
-┌ [KunFayz•••
+┌┏━━━━━━━⬣ [KunFayz•••
 └>
     
 █
 """)
     print((80))
-    print(Fore.LIGHTGREEN
-    print(Fore.LIGHTGREEN + Style.BRIGHT + "└>• Note: Do not use to attack government websites.")
+    print(Fore.LIGHTGREEN┏━━━KunFayz━━⬣
+    print(Fore.LIGHTGREEN + Style.BRIGHT + "┗━>  • Note: Do not use to attack government websites.")
 if __name__ == "__main__":
     print_red_centered_art()
 def menu():
