@@ -70,6 +70,8 @@ def print_red_centered_art():
 
 ╔═ ║  ═╗
 ╚════╝
+┌ [KunFayz•••
+└>
     
 █
 """)
