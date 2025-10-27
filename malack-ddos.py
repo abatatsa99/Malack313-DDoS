@@ -82,13 +82,13 @@ def print_red_centered_art():
 if __name__ == "__main__":
     print_red_centered_art()
 def menu():
-   # print(Style.BRIGHT + Fore.YELLOW + "[INFO!]" Fore.WHITE + "Press CTRL + C and press enter to exit!!")
+   # print("\r{Fore.LIGHTYELLOW_EX}[Info] Press CTRL + C and press enter to exit!!")
     print(f"\r{Fore.LIGHTYELLOW_EX}•••> [Info] Press CTRL + C and press enter to exit!!")
     print(f"\r{Fore.WHITE}——————————————————————————————————————————————————————————————————")
-    print(f"\r{Fore.WHITE}Silahkan ketik 1 untuk melanjutkan...")
-    print(Fore.BLUE + Style.BRIGHT + "1. DDos a website.  [1]")
-    print(Fore.WHITE + Style.BRIGHT + "2. exit.            [2]")
-    print("Enter your options .. [e.g 1,2]") 
+    print(f"\r{Fore.WHITE}Please type Y to continue...")
+    print(Fore.BLUE + Style.BRIGHT + "Y. DDos a website.  [1]")
+    print(Fore.WHITE + Style.BRIGHT + "n. exit.            [2]")
+    print("Enter your options .. [e.g Y,n]") 
     global usr
     usr = input(Fore.YELLOW + Style.BRIGHT + "••> " )
     if usr == "1":
