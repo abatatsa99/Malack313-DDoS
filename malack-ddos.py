@@ -83,10 +83,8 @@ def print_red_centered_art():
   ║
   ╚═════════════════════════════════════╝",
     """)
-    red_art = f"\r{Fore.GREEN}{art}{Style.RESET_ALL}"  # Set the text color to red
     print(f"\r{Fore.LIGHTRED_EX}┏━━━KunFayz━━━⬣")
     print(f"\r{Fore.LIGHTRED_EX}┗━>{Fore.YELLOW}•80")
-    #red_art2 = f"{Fore.RED}{art2}{Style.RESET_ALL}"
     red_art2 = f"\r{Fore.YELLOW}{Style.RESET_ALL}"
     print(f"\r{Fore.LIGHTGREEN_EX}┏━━━KunFayz━━━⬣")
     print(f"\r{Fore.LIGHTGREEN_EX}┗━>• Note: Do not use to attack government websites.")
