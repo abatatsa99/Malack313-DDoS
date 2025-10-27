@@ -85,9 +85,9 @@ def menu():
    # print("\r{Fore.LIGHTYELLOW_EX}[Info] Press CTRL + C and press enter to exit!!")
     print(f"\r{Fore.LIGHTYELLOW_EX}•••> [Info] Press CTRL + C and press enter to exit!!")
     print(f"\r{Fore.WHITE}——————————————————————————————————————————————————————————————————")
-    print(f"\r{Fore.WHITE}Please type Y to continue...")
-    print(Fore.BLUE + Style.BRIGHT + "••> 1. DDos a website.  [Y]")
-    print(Fore.WHITE + Style.BRIGHT + "••> 2. exit.            [n]")
+    print(f"\r{Fore.WHITE} ⬣ Please type Y to continue... ⬣")
+    print(Fore.BLUE + Style.BRIGHT + "┗> 1. DDos a website.  [Y]")
+    print(Fore.WHITE + Style.BRIGHT + "┗> 2. exit.            [n]")
     print("Enter your options .. [e.g Y,n]") 
     global usr
     usr = input(Fore.YELLOW + Style.BRIGHT + "••> " )
