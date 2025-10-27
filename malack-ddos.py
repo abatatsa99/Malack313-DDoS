@@ -33,7 +33,7 @@ def ddos():
    # print(Fore.YELLOW + Style.BRIGHT + "[INFO!]" + Fore.WHITE + " Press CTRL + C and press Enter to Exit!")
     #print(Style.BRIGHT + Fore.YELLOW + "[INFO!]" + Fore.WHITE + "Press CTRL + C and press enter to exit!!")
     time.sleep(4)
-    print(Fore.LIGHTCYAN + Style.BRIGHT + "DDos starting in ~")
+    print(Fore.LIGHTCYAN_EX + Style.BRIGHT + "DDos starting in ~")
     print("seconds : 3")
     time.sleep(1)
     print("seconds : 2")
