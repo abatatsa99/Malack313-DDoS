@@ -5,7 +5,7 @@ import socket
 import threading
 import time
 from colorama import Fore, Style
-def DDoS():
+def ddos():
     os.system("clear")
     print("press CTRL + C and press ENTER to exit !!")
     while True:
