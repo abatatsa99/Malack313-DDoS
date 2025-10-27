@@ -68,9 +68,10 @@ def ddos():
     for i in range(threads):
         thread = threading.Thread(target=attack)
         thread.start()
-    
-        os.system("clear")
-        print("""
+
+def print_red_centered_art():
+    os.system("clear")
+    print("""
     \033[32m╔══════════════════════════════════════╗
     \033[32m║
     \033[32m║  \033[0m\033[41m  ╔███╗╔███╗   ╔████╗  ╔█╗         ╔████╗ \033[0m
