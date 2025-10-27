@@ -91,7 +91,7 @@ def print_red_centered_art():
     print(f"\r{Fore.LIGHTGREEN_EX}┏━━━KunFayz━━━⬣")
     print(f"\r{Fore.LIGHTGREEN_EX}┗━>• Note: Do not use to attack government websites.")
 if __name__ == "__main__":
-    print_red_centered_art()
+def print_red_centered_art()
     os.system("clear")
     print("""
 \033[32m╔══════════════════════════════════════╗
