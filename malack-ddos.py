@@ -96,6 +96,7 @@ def print_red_centered_art():
     print(f"\r{Fore.LIGHTGREEN_EX}┗━>• Note: Do not use to attack government websites.")
 if __name__ == "__main__":
     os.system("clear")
+    print_red_centered_art()
 def menu():
    # print("\r{Fore.LIGHTYELLOW_EX}[Info] Press CTRL + C and press enter to exit!!")
     print(f"\r{Fore.LIGHTYELLOW_EX}•••> [Info] Press CTRL + C and press enter to exit!!")
