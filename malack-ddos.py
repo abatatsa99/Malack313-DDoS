@@ -65,9 +65,8 @@ def ddos():
         thread = threading.Thread(target=attack)
         thread.start()
 def print_red_centered_art():
-    os.system("clear")
-    art = [", 
-  f"\r{Fore.LIGHTBLUE_EX}╔══════════════════════════════════════╗  ",
+    art = [ 
+  f"\r{Fore.LIGHTBLUE_EX}╔══════════════════════════════════════╗",  
   f"\r{Fore.LIGHTBLUE_EX}║{Fore.LIGHTBLUE_EX} ╔██═╗╔═██╗",
   f"\r{Fore.LIGHTBLUE_EX}║{Fore.LIGHTBLUE_EX}║█╔═╗█╔═╗█║",
   f"\r{Fore.LIGHTBLUE_EX}║{Fore.LIGHTBLUE_EX}║█║  ║█║  ║█║",
