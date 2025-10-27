@@ -66,15 +66,15 @@ def ddos():
         thread.start()
 def print_red_centered_art():
     os.system("clear")
-    print("""
+    art = 
+f"\r{Fore.LIGHTBLUE_EX}║",
+f"\r{Fore.LIGHTBLUE_EX}║╔═══╗"
+f"\r{Fore.LIGHTBLUE_EX}║╚═══",
 
-╔═ ║  ═╗
-╚════╝
-┌┏━━━━━━━⬣ [KunFayz•••
-└>
+
     
 █
-""")
+
     print(f"\r{Fore.LIGHTRED_EX}┏━━━KunFayz━━━⬣")
     print(f"\r{Fore.LIGHTRED_EX}┗━>{Fore.YELLOW}•80")
     print(f"\r{Fore.LIGHTGREEN_EX}┏━━━KunFayz━━━⬣")
