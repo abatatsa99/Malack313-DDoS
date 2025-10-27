@@ -11,8 +11,8 @@ def ddos():
     while True:
 
         try:
-        print("\033[32m╔╗")
-        print("\033[32m║║")
+            print("\033[32m╔╗")
+            print("\033[32m║║")
             threads = int(input("ENTER NUMBER OF THREADS : "))
         except ValueError:
             print("please enter a integer value")
