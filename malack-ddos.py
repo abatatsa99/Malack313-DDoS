@@ -67,15 +67,22 @@ def ddos():
 def print_red_centered_art():
     os.system("clear")
     art = 
-f"\r{Fore.LIGHTBLUE_EX}║",
-f"\r{Fore.LIGHTBLUE_EX}║╔═══╗"
-f"\r{Fore.LIGHTBLUE_EX}║╚═══",
-
-
-    
-█
-
-    print(f"\r{Fore.LIGHTRED_EX}┏━━━KunFayz━━━⬣")
+  f"\r{Fore.LIGHTBLUE_EX}╔══════════════════════════════════════╗  ",
+  f"\r{Fore.LIGHTBLUE_EX}║{Fore.LIGHTBLUE_EX} ╔██═╗╔═██╗",
+  f"\r{Fore.LIGHTBLUE_EX}║{Fore.LIGHTBLUE_EX}║█╔═╗█╔═╗█║",
+  f"\r{Fore.LIGHTBLUE_EX}║{Fore.LIGHTBLUE_EX}║█║  ║█║  ║█║",
+  f"\r{Fore.LIGHTBLUE_EX}║{Fore.LIGHTBLUE_EX}║█║  ║█║  ║█║",
+  f"\r{Fore.LIGHTBLUE_EX}║{Fore.LIGHTBLUE_EX}║█║  ║█║  ║█║",
+  f"\r{Fore.LIGHTBLUE_EX}║{Fore.LIGHTBLUE_EX}║█║  ║█║  ║█║",
+  f"\r{Fore.LIGHTBLUE_EX}║{Fore.LIGHTBLUE_EX}║█║  ╚═╝  ║█║",
+  f"\r{Fore.LIGHTBLUE_EX}║{Fore.LIGHTBLUE_EX}║█║         ║█║",
+  f"\r{Fore.LIGHTBLUE_EX}║{Fore.LIGHTBLUE_EX}╚═╝         ╚═╝",
+  f"\r{Fore.LIGHTBLUE_EX}║",
+  f"\r{Fore.LIGHTBLUE_EX}║",
+  f"\r{Fore.LIGHTBLUE_EX}║",
+  f"\r{Fore.LIGHTBLUE_EX}║",
+  f"\r{Fore.LIGHTBLUE_EX}║╚═════════════════════════════════════╝
+  print(f"\r{Fore.LIGHTRED_EX}┏━━━KunFayz━━━⬣")
     print(f"\r{Fore.LIGHTRED_EX}┗━>{Fore.YELLOW}•80")
     print(f"\r{Fore.LIGHTGREEN_EX}┏━━━KunFayz━━━⬣")
     print(f"\r{Fore.LIGHTGREEN_EX}┗━>• Note: Do not use to attack government websites.")
