@@ -31,12 +31,12 @@ def ddos():
         else:
             break;
     attack_num = 0
-    trget = str(input(Fore.WHITE + Style.BRIGHT + "┗━> ENTER IP OF THE HOST: \033[33m"))
+    trget = str(input(Fore.WHITE + Style.BRIGHT + "┗━> Enter IP of the host: \033[33m"))
     fake = '192.178.1.38'
     #port = 80( default http port is 80)
     while True:
         try:
-            port = int(input("ENTER PORT (default port : 80 ) : ") or 80)
+            port = int(input(f"{Fore.WHITE}┗━> Enter Port (default port : 80 ) : \033[33m") or 80)
         except ValueError:
             print("Please enter a valid port , please try again")
             continue;
