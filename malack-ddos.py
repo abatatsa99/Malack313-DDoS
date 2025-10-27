@@ -62,7 +62,6 @@ def DDoS():
         thread.start()
 def print_red_centered_art():
     os.system("clear")
-    art = '''
     print("""
 └>
 ╔═ ║  ═╗
