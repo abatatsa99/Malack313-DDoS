@@ -31,7 +31,8 @@ def ddos():
         else:
             break;
     attack_num = 0
-    trget = str(input(Fore.LIGHTCYAN_EX + Style.BRIGHT + "ENTER IP OF THE HOST :  "))
+    print(f"\r{Fore.WHITE}┏━━━KunFayz━━━⬣")
+    trget = str(input(Fore.WHITE_EX + Style.BRIGHT + "┗━> ENTER IP OF THE HOST :  "))
     fake = '192.178.1.38'
     #port = 80( default http port is 80)
     while True:
