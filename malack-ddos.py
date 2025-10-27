@@ -65,22 +65,23 @@ def ddos():
         thread = threading.Thread(target=attack)
         thread.start()
 def print_red_centered_art():
+    os.system("clear")
     art = '''
-  {Fore.LIGHTBLUE_EX}╔══════════════════════════════════════╗", 
-  f"\r{Fore.LIGHTBLUE_EX}║{Fore.LIGHTBLUE_EX} ╔██═╗╔═██╗
-  f"\r{Fore.LIGHTBLUE_EX}║{Fore.LIGHTBLUE_EX}║█╔═╗█╔═╗█║
-  f"\r{Fore.LIGHTBLUE_EX}║{Fore.LIGHTBLUE_EX}║█║  ║█║  ║█║
-  f"\r{Fore.LIGHTBLUE_EX}║{Fore.LIGHTBLUE_EX}║█║  ║█║  ║█║
-  f"\r{Fore.LIGHTBLUE_EX}║{Fore.LIGHTBLUE_EX}║█║  ║█║  ║█║
-  f"\r{Fore.LIGHTBLUE_EX}║{Fore.LIGHTBLUE_EX}║█║  ║█║  ║█║
-  f"\r{Fore.LIGHTBLUE_EX}║{Fore.LIGHTBLUE_EX}║█║  ╚═╝  ║█║
-  f"\r{Fore.LIGHTBLUE_EX}║{Fore.LIGHTBLUE_EX}║█║         ║█║
-  f"\r{Fore.LIGHTBLUE_EX}║{Fore.LIGHTBLUE_EX}╚═╝         ╚═╝
-  f"\r{Fore.LIGHTBLUE_EX}║
-  f"\r{Fore.LIGHTBLUE_EX}║
-  f"\r{Fore.LIGHTBLUE_EX}║
-  f"\r{Fore.LIGHTBLUE_EX}║
-  f"\r{Fore.LIGHTBLUE_EX}║╚═════════════════════════════════════╝",
+  ╔══════════════════════════════════════╗", 
+  ║  ╔██═╗╔═██╗
+  ║  ║█╔═╗█╔═╗█║
+  ║  ║█║  ║█║  ║█║
+  ║  ║█║  ║█║  ║█║
+  ║  ║█║  ║█║  ║█║
+  ║  ║█║  ║█║  ║█║
+  ║  ║█║  ╚═╝  ║█║
+  ║  ║█║         ║█║
+  ║  ╚═╝         ╚═╝
+  ║
+  ║
+  ║
+  ║
+  ╚═════════════════════════════════════╝",
     '''
     red_art = f"\r{Fore.GREEN}{art}{Style.RESET_ALL}"  # Set the text color to red
     print(f"\r{Fore.LIGHTRED_EX}┏━━━KunFayz━━━⬣")
