@@ -75,8 +75,8 @@ def print_red_centered_art():
     
 █
 """)
-    print(f"\r{Fore.LIGHTBLUE_EX}┏━━━KunFayz━━━⬣")
-    print(f"\r{Fore.LIGHTBLUE_EX}┗━>•80")
+    print(f"\r{Fore.LIGHTRED_EX}┏━━━KunFayz━━━⬣")
+    print(f"\r{Fore.LIGHTRED_EX}┗━>•80")
     print(f"\r{Fore.LIGHTGREEN_EX}┏━━━KunFayz━━━⬣")
     print(f"\r{Fore.LIGHTGREEN_EX}┗━>• Note: Do not use to attack government websites.")
 if __name__ == "__main__":
@@ -85,7 +85,7 @@ def menu():
    # print("\r{Fore.LIGHTYELLOW_EX}[Info] Press CTRL + C and press enter to exit!!")
     print(f"\r{Fore.LIGHTYELLOW_EX}•••> [Info] Press CTRL + C and press enter to exit!!")
     print(f"\r{Fore.WHITE}——————————————————————————————————————————————————————————————————")
-    print(f"\r{Fore.WHITE} ⬣ Please type Y to continue... ⬣")
+    print(f"\r{Fore.BLUE}}┏⬣ Please type Y to continue...")
     print(Fore.BLUE + Style.BRIGHT + "┗> 1. DDos a website.  [Y]")
     print(Fore.WHITE + Style.BRIGHT + "┗> 2. exit.            [n]")
     print("Enter your options .. [e.g Y,n]") 
