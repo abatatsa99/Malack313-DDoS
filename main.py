@@ -66,8 +66,8 @@ def ddos():
 
                 time.sleep(2)
                 attack_num += 1
-                print(f"{Fore.LIGHTWHITE_EX}[]  {Fore.LIGHTCYAN_EX}M A L A C K  \033[103mSent massage\033[0m  \033[41m"+ str(attack_num)+"\033[0m \033[94m Starting\033[0")
-                print(f"{Fore.LIGHTRED_EX}[]  {Fore.LIGHTBLUE_EX}M A L A C K  \033[7mSent massage\033[0m  \033[103m"+ str(attack_num)+"\033[0m \033[31m Starting\033[0m")
+                print(f"\033[48;5;0m{Fore.LIGHTWHITE_EX}Starting-ddos\033[0m {Fore.LIGHTCYAN_EX}"+ (attack_num)+"\033[0")
+                print(f"{Fore.LIGHTBLUE_EX}"+ str(trget)+"\033[0m")
             except socket.error:
                 time.sleep(2)
                 print(f"{Fore.BLUE}[]  {Fore.YELLOW}Connection failed   \033[7m please check host\033[0m")
