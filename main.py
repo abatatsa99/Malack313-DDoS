@@ -67,6 +67,7 @@ def ddos():
                 time.sleep(1)
                 attack_num += 1
                 print(f"\033[97m\033[91mStarting-ddos\033[0m \033[93m" +(trget)+ " \033[32mnum_attack \033[37m" +str(attack_num)+ "")
+                print(f"\033[33mStarting-ddos\033[0m \033[34m" +(trget)+ "")
             except socket.error:
                 time.sleep(1)
                 print(f"{Fore.BLUE}[]  {Fore.YELLOW}Connection failed   \033[7m please check host\033[0m")
